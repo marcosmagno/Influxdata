@@ -10,9 +10,9 @@ Virturian Challenge
 
 2. On each folder, execute the main files  
 
-* HBMQTT (Serveer):  
+* HBMQTT (Server):  
 Change the configuration file (conf)
-> bind: **COMPUTER_IP**
+>> bind: **COMPUTER_IP**
 
 hbmqtt -c conf -d
 
