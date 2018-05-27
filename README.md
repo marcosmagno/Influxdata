@@ -17,7 +17,7 @@ bind: **computer_ip**
 
 * Publisher (data generator and publisher) 
 **server_ip** and **topic_publisher** default to 127.0.0.1 and sensor/temperatura, respectively. 
-> python3 publisher.py
+> python3 publisher.py --server-ip "server_ip" --topic "topic_publisher"
 
 * Subscriber (data generator and publisher) 
 **server_ip** and **topic_publisher** default to 127.0.0.1 and sensor/temperatura, respectively. 
