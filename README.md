@@ -1,11 +1,10 @@
 Virturian Challenge
 ============================
-###Dependencies
-####Publisher and Subscriber
-
+### Dependencies
+#### Publisher and Subscriber
 > python 3.4+
 
-###Usage
+### Usage
 1. Clone the repository
 > git clone https://github.com/marcosmagno/Influxdata.git
 
