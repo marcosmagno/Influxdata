@@ -19,7 +19,7 @@ class Data(object):
     def set_data(self):
         """Method for setting a random temperature with the random choice function.
             Attribute:
-            	temperature (list): An integer list.
+                temperature (list): An integer list.
 
         """
 
@@ -59,10 +59,9 @@ class Publisher(object):
 
          """
         self.dataToSend = data
-        print("sending...")
+
         try:
             yield from self.client.connect('mqtt://192.168.0.16')
-
             tasks = [asyncio.ensure_future(self.client.publish(
                 'sensor/temperature', bytes(str(self.dataToSend), 'utf-8')))]
 
@@ -93,7 +92,7 @@ def main():
 
     while True:
         obj_Data.set_data()
-        #time.sleep(0.2)
+        # time.sleep(0.2)
         obj_Publisher.run(obj_Publisher.send_mqtt(obj_Data.get_data()))
 
 
