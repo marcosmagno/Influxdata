@@ -6,9 +6,16 @@ from hbmqtt.mqtt.constants import QOS_1, QOS_2
 from influxdb import InfluxDBClient
 import time
 
+# TODO
 
 class Subscribe(object):
-    """docstring for Subscribe"""
+    """This class is for creating the subscribe
+            Attribus:
+                arg (list)  : Argument list.
+                db  (object): Database object.
+                message (generator): A generator that represents incoming messages
+
+    """
 
     def __init__(self, args):
         self.arg = args
@@ -43,7 +50,13 @@ class Subscribe(object):
 
 
 class InfluxDB(object):
-    """docstring for ClassName"""
+    """This class represents the InfluxDB database
+            Attributes:
+                user (string)   : A string representing the database user
+                password (string): A string representing the database password
+                host    (string): A sring representing the computer where the database is.
+                port    (int)   : AM integer representing the database port
+    """
 
     def __init__(self):
         """Instantiate a connection to the InfluxDB."""
@@ -58,7 +71,8 @@ class InfluxDB(object):
             self.host, self.port, self.user, self.password, self.dbname)
 
     def writeDB(self, node, temperature):
-        
+        # TODO
+        # make comments
 
 
         json_value = [
